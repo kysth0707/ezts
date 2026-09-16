@@ -1,0 +1,15 @@
+{
+    "name": "week1-typescript",
+    "version": "1.0.0",
+    "description": "",
+    "type": "commonjs",
+    "main": "index.js",
+    "scripts": {
+      "run" : "node helper/run-ts.js",
+      "new" : "node helper/create-ts.js"
+    },
+    "devDependencies": {
+      "typescript": "^7.0.2"
+    }
+  }
+  

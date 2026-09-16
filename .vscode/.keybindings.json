@@ -1,0 +1,13 @@
+[
+    {
+      "key": "f6",
+      "command": "workbench.action.tasks.runTask",
+      "args": "TypeScript: Run Current File",
+      "when": "editorTextFocus && resourceExtname == .ts"
+    },
+    {
+      "key": "ctrl+alt+n",
+      "command": "workbench.action.tasks.runTask",
+      "args": "TypeScript: Create New File"
+    }
+]

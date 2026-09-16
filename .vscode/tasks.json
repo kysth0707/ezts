@@ -1,0 +1,49 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "TypeScript: Run Current File",
+            "type": "shell",
+            "command": "npm",
+            "args": [
+                "run",
+                "run",
+                "--",
+                "${relativeFile}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared",
+                "focus": true,
+                "clear": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "TypeScript: Create New File",
+            "type": "shell",
+            "command": "npm",
+            "args": [
+                "run",
+                "new",
+                "--",
+                "${input:fileName}"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "fileName",
+            "type": "promptString",
+            "description": "생성할 TypeScript 파일 이름",
+            "default": "week1-typescript/"
+        }
+    ]
+}
