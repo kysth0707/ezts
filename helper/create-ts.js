@@ -57,12 +57,9 @@ const content = `/*
  * < 요약 >
  * 
  * 
- * [${year}/${month}/${date} ${hour}:${minute}:${second}]
+ * [${year}/${month}/${date} ${hour}:${minute}:${second} / ${fileName}]
  */
 
-
-
-export {};
 `;
 
 fs.mkdirSync(path.dirname(filePath), {
